@@ -1,7 +1,8 @@
-% Milestone 1 - Requirements
-% Amina Mahmood; Aaron Wade Parker; Dishant Mishra; Edward Riley; Vincent Cheng
-% February 11, 2021
-
+```
+ Milestone 1 - Requirements
+ Amina Mahmood; Aaron Wade Parker; Dishant Mishra; Edward Riley; Vincent Cheng
+ February 11, 2021
+```
 
 ## Glossary
 
