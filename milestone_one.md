@@ -60,7 +60,7 @@ Our goal is to make a new facade for Reddit with archival features and a better,
 
 ## Input
 
-* 
+* Anticipated Input
 
 
 ## Processing
@@ -75,7 +75,7 @@ Our goal is to make a new facade for Reddit with archival features and a better,
 
 ## Output
 
-* 
+* Anticipated Output
 
 
 ## Data Sources
