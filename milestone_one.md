@@ -1,7 +1,17 @@
-```
- Milestone 1 - Requirements
- Amina Mahmood; Aaron Wade Parker; Dishant Mishra; Edward Riley; Vincent Cheng
- February 11, 2021
+```yaml
+milestone:
+	iteration: 01
+	title: "requirements"
+	date: "February 12, 2021"
+group:
+    number: 03
+    name: "Europa Report"
+    members:
+    - "Amina Mahmood"
+    - "Aaron Wade Parker"
+    - "Dishant Mishra"
+    - "Edward Riley"
+    - "Vincent Cheng"
 ```
 
 ## Glossary
@@ -21,63 +31,46 @@
 
 ## Current System
 
-Reddit in its current form can be rather infuriating to use. Any edit made to a comment or a post is hidden and the original content cannot be seen again. It is also hard to visualize a lot of user generated data like votes due to Reddit's various obfuscation rules on it's frontend. 
+Reddit in its current form can be rather infuriating to use. Any edit made to a comment or a post is hidden and the original content cannot be seen again. It is also hard to visualize a lot of user generated data like votes due to Reddit's various obfuscation rules on it's frontend. It's API is also very cluttered and hard to use for the purpose of research.
 
 
 ## Goals
 
-Describe the goal. List changes:
+Our goal is to make a new facade for Reddit with archival features and a better, more uniform API. This is how we plan to accomplish it:
 
-Goal #1: Accumulate and track the numbers of the subreddit communities from the beginning of semester to the end of the semester by each day.
-
-Goal #2: Accumulate and track the numbers of the users from the beginning of semester to the end of the semester by each day.
-
-Goal #3: Accumulate and track the numbers of the posts communities from the beginning of semester to the end of the semester by each day.
-
-Goal #4: Identify the factors supporting the growth or decline of subreddit communities. 
-
-Goal #5: Create a consistent realtime data visualiztion.
+* Goal #1: Accumulate and track the numbers of the subreddit  communities from the beginning of semester to the end of the semester by each day.
+* Goal #2: Accumulate and track the numbers of the users from the beginning of semester to the end of the semester by each day.
+* Goal #3: Accumulate and track the numbers of the posts communities  from the beginning of semester to the end of the semester by each day.
+* Goal #4: Identify the factors supporting the growth or decline of subreddit communities.
+* Goal #5: Create a consistent realtime data visualiztion.
 
 
 ## Stakeholders
 
-* Reddit users
-    * 
-        
 * Data scientists
-    * 
-
-* Subreddit Moderators
-    * 
+    * We plan to tailor our exposed API and front-end to fit the needs of people in this field so minimal work is required to extract relevant information.
 
 
 ## Scope
 
+* An ETL script that will fetch data from reddit every day.
+* A NodeJS backend for our API to connect to the database.
+* A ReactJS front-end for users to interact with the API.
+
 
 ## Input
 
-The following inputs will be used:
-
-* Partial user input will be received as users enter search queries or new log entries.
-
-* An audio file’s information from Rivendell or manually entered information in the case of physical media.
-
-* Song metadata from one or more online music database APIs.
-
-* Song name, artist, and air date information entered by the user when searching the log.
-
-* Date and song metadata information entered by the user for viewing statistics and generating reports.
+* 
 
 
 ## Processing
 
-* Searches will be run on partial user input (while entering or searching for a song, artist, or imaging) to provide autocompletion suggestions.
+* A diff utility will be used to create low cost archives of content in our database.
 
-* Song and artist metadata provided by users and online music database APIs will be cleaned and checked against existing entries to ensure consistency.
+* Any user input will be cleaned and standardized in accordance with Reddit's markdown before being stored in our database.
 
-* Searches will be run based on artist, song name, and date parameters.
+* Searches will be based on time, tags, and votes.
 
-* Historical broadcast data will be aggregated and processed to create summary statistics and visualizations.
 
 
 ## Output
@@ -87,4 +80,12 @@ The following inputs will be used:
 
 ## Data Sources
 
-* Reddit API
+* [Reddit API](https://www.reddit.com/dev/api/) 
+
+## Tech Stack
+
+* ReactJS
+* NodeJS
+* ExpressJS
+* MySQL/MariaDB
+* Python
