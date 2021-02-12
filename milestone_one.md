@@ -28,7 +28,11 @@ Reddit in its current form can be rather infuriating to use. Any edit made to a 
 
 Describe the goal. List changes:
 
-* 
+Goal #1: Accumulate and track the numbers of the subreddit communities from the beginning of semester to the end of the semester by each day.
+Goal #2: Accumulate and track the numbers of the users from the beginning of semester to the end of the semester by each day.
+Goal #3: Accumulate and track the numbers of the posts communities from the beginning of semester to the end of the semester by each day.
+Goal #4: Identify the factors supporting the growth or decline of subreddit communities. 
+Goal #5: Create a consistent realtime data visualiztion.
 
 
 ## Stakeholders
