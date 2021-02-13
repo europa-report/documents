@@ -58,9 +58,9 @@ Our goal is to make a new facade for Reddit with archival features and a better,
 * A ReactJS front-end for users to interact with the API.
 
 
-## Input
+## Anticipated Input
 
-* Anticipated Input
+* JSON
 
 
 ## Processing
@@ -73,9 +73,9 @@ Our goal is to make a new facade for Reddit with archival features and a better,
 
 
 
-## Output
+## Anticipated Output
 
-* Anticipated Output
+* JSON
 
 
 ## Data Sources
