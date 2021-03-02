@@ -51,8 +51,8 @@ The project serves to provide a statistical analysis to show the increase or dec
     - Data Layer
     - **MySQL/MariaDB**
     - Business Layer
-    - ** NodeJS **
-    - ** ExpressJS **
+    - **NodeJS**
+    - **ExpressJS**
 - Client side 
     - Prensentation Layer
     - **React.js** (Frontend Framework) 
