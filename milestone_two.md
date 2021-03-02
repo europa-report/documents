@@ -17,15 +17,15 @@ group:
 # Development Book
 
 ## Team Members and Roles
-- ** Amina Mahmood **
+- **Amina Mahmood**
     - Code Reviewer
-- ** Aaron Wade Parker **
+- **Aaron Wade Parker**
     - Configuration Manager
-- ** Dishant Mishra **
+- **Dishant Mishra**
     - Software Architect
-- ** Edward Riley **
+- **Edward Riley**
     - Team Coordinator
-- ** Vincent Cheng ** 
+- **Vincent Cheng** 
     - Documentartian
 
 ## Background
