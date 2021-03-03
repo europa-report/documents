@@ -18,15 +18,15 @@ group:
 
 ## Team Members and Roles
 - **Amina Mahmood**
-    - Code Reviewer
+    - _Code Reviewer_
 - **Aaron Wade Parker**
-    - Configuration Manager
+    - _Configuration Manager_
 - **Dishant Mishra**
-    - Software Architect
+    - _Software Architect_
 - **Edward Riley**
-    - Team Coordinator
-- **Vincent Cheng** 
-    - Documentartian
+    - _Team Coordinator_
+- **Vincent Cheng**
+    - _Documentartian_
 
 ## Background
 Reddit is a social news aggregation, web content rating, and discussion website, recently including livestream content through Reddit Public Access Network. Registered members submit content to the site such as links, text posts, and images, which are then voted up or down by other members. A subreddit is a specific online community, and the posts associated with it, on the social media website Reddit. Subreddits are dedicated to a particular topic that people write about, and they're denoted by /r/, followed by the subreddit's name, e.g., /r/gaming.
@@ -42,23 +42,31 @@ The project serves to provide a statistical analysis to show the increase or dec
 
 ## Business Rules
 - A day is between 12:00 PM - 11:59 AM
-- User Interface
+- Cron's job execute python file to retrieve data from Reddit's api.
+- Store to the local database.
+- User load up the webpage, Nodejs load data to the React's component.
+- User Interface will display the chart of datas.
 
 
 
 ## Technologies Used
 - Serverside Layers
     - Data Layer
-    - **MySQL/MariaDB**
+      - **MySQL/MariaDB**
     - Business Layer
-    - **NodeJS**
-    - **ExpressJS**
+      - **NodeJS**
+      - **ExpressJS**
 - Client side 
     - Prensentation Layer
-    - **React.js** (Frontend Framework) 
+      -  **React.js** (Frontend Framework) 
 
 ## Design Patterns
-
+- **Model, View, Controller (MVC)**
+  - Model(Nodejs): responsible for represent data.
+  - Controller(Nodejs): responsible for manipulation of data.
+  - View(React): display data to the gui.
+- **Single Page Application (SPA)**
+  - All the interactives and swapping data will be in a single page.
 ## Timeline
 
 * __Subreddit__ - A Subreddit is a sub community within Reddit. It usually follows a well-defined theme and people interested in the topic/theme can join it to share content with other members of the community.
@@ -107,7 +115,6 @@ Our goal is to make a new facade for Reddit with archival features and a better,
 
 * JSON
 
-
 ## Processing
 
 * A diff utility will be used to create low cost archives of content in our database.
@@ -127,7 +134,7 @@ Our goal is to make a new facade for Reddit with archival features and a better,
 
 * [Reddit API](https://www.reddit.com/dev/api/) 
 
-## Tech Stack
+## Tech stack
 
 * ReactJS
 * NodeJS
