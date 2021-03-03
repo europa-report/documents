@@ -67,6 +67,12 @@ The project serves to provide a statistical analysis to show the increase or dec
   - View(React): display data to the gui.
 - **Single Page Application (SPA)**
   - All the interactives and swapping data will be in a single page.
+- **Proxy**
+  - Will be using python as proxy to retrieve data from Reddit's api.
+- **Observer**
+  - Using socket.io and react hook as event listener.
+- **Compostion**
+  - Using React's Component to generate another component.
 ## Timeline
 
 * __Subreddit__ - A Subreddit is a sub community within Reddit. It usually follows a well-defined theme and people interested in the topic/theme can join it to share content with other members of the community.
