@@ -17,16 +17,17 @@ group:
 # Development Book
 
 ## Team Members and Roles
-- **Amina Mahmood**
-    - _Code Reviewer_
-- **Aaron Wade Parker**
-    - _Configuration Manager_
-- **Dishant Mishra**
-    - _Software Architect_
-- **Edward Riley**
-    - _Team Coordinator_
 - **Vincent Cheng**
     - _Documentarian_
+- **Amina Mahmood**
+    - _Code Reviewer_
+- **Dishant Mishra**
+    - _Software Architect_
+- **Aaron Wade Parker**
+    - _Configuration Manager_
+- **Edward Riley**
+    - _Team Coordinator_
+
 
 ## Background
 Reddit is a social news aggregation, web content rating, and discussion website, recently including livestream content through Reddit Public Access Network. Registered members submit content to the site such as links, text posts, and images, which are then voted up or down by other members. A subreddit is a specific online community, and the posts associated with it, on the social media website Reddit. Subreddits are dedicated to a particular topic that people write about, and they're denoted by /r/, followed by the subreddit's name, e.g., /r/gaming.
@@ -41,7 +42,7 @@ The project serves to provide a statistical analysis to show the increase or dec
 - Object-Oriented Programming Language 
 
 ## Business Rules
-- A day is between 12:00 PM - 11:59 AM
+- A day is between 12:00 PM - 11:59 AM.
 - Cron's job execute python file to retrieve data from Reddit's api.
 - Store to the local database.
 - User load up the webpage, Nodejs load data to the React's component.
@@ -64,11 +65,11 @@ The project serves to provide a statistical analysis to show the increase or dec
 
 ## Design Patterns
 - **Model, View, Controller (MVC)**
-  - Model (Nodejs): responsible for represent data.
-  - Controller (Nodejs): responsible for manipulation of data.
-  - View (React): display data to the gui.
+  - Model (Nodejs) is responsible for represent data.
+  - Controller (Nodejs) is responsible for manipulation of data.
+  - View (React) displays data to the GUI.
 - **Single Page Application (SPA)**
-  - The Single Page Application design pattern will fit all the interactives and swapping data will be in a single page.
+  - The single page application design pattern will fit all the interactives and swapping data will be in a single page.
 - **Proxy**
   - This proxy design pattern will be using python as proxy to retrieve data from Reddit's api.
 - **Observer**
@@ -81,17 +82,16 @@ The project serves to provide a statistical analysis to show the increase or dec
 
 | Milestones                               | Start         | Deadline     |
 |------------------------------------------|---------------|--------------|
-| Milestone 01 - Requirements              | Feb .., 2021  | Feb 12, 2021 |
-| Milestone 02 - Design & Design Patterns  | Mar .., 2021  | Mar 5, 2021  |
+| Milestone 01 - Requirements              | Feb 5, 2021   | Feb 12, 2021 |
+| Milestone 02 - Design & Design Patterns  | Mar 2, 2021   | Mar 5, 2021  |
 | Milestone 03 - Layering|                 | Mar 12, 2021  | Mar 12, 2021 |
 | Milestone 04 - Exception Handling        | Mar 26, 2021  | Mar 26, 2021 |
 | Milestone 05 - Performance & Refactoring | Apr 9, 2021   | Apr 9, 2021  |
 | Milestone 06 - Testing                   | Apr 23, 2021  | Apr 23, 2021 |
 | Milestone 07 - Deploying & Packaging     | Apr 30, 2021  | Apr 30, 2021 |
+---------------------------------------------------------------------------
 
-https://docs.github.com/en/github/writing-on-github/organizing-information-with-tables
-This is more information about tables
-
+## Glossary
 
 * __Subreddit__ - A Subreddit is a sub community within Reddit. It usually follows a well-defined theme and people interested in the topic/theme can join it to share content with other members of the community.
 
@@ -113,12 +113,13 @@ Reddit in its current form can be rather infuriating to use. Any edit made to a 
 
 ## Goals
 
-Our goal is to make a new facade for Reddit with archival features and a better, more uniform API. This is how we plan to accomplish it:
+Our overall goal is to make a new facade for Reddit with archival features and a better but with selected subreddit communities, more uniform API. This is how we plan to accomplish it:
 
-* Goal #1: Accumulate and track the numbers of the subreddit  communities from the beginning of semester to the end of the semester by each day.
-* Goal #2: Accumulate and track the numbers of the users from the beginning of semester to the end of the semester by each day.
-* Goal #3: Accumulate and track the numbers of the posts communities  from the beginning of semester to the end of the semester by each day.
-* Goal #4: Identify the factors supporting the growth or decline of subreddit communities.
+* ~~Goal #1: Accumulate and track the numbers of the subreddit communities from the beginning of semester to the end of the semester by each day.~~
+* Revised Goal #1: Each member of the group will select the 2 subreddit communities to use for this course.
+* Goal #2: Accumulate and track the numbers of the users in the selected subreddit communities from the beginning of semester to the end of the semester by each day.
+* Goal #3: Accumulate and track the numbers of the posts in the selected subreddit communities from the beginning of semester to the end of the semester by each day.
+* Goal #4: Identify the factors supporting the growth or decline of selected subreddit communities.
 * Goal #5: Create a consistent realtime data visualiztion.
 
 
@@ -142,11 +143,8 @@ Our goal is to make a new facade for Reddit with archival features and a better,
 ## Processing
 
 * A diff utility will be used to create low cost archives of content in our database.
-
 * Any user input will be cleaned and standardized in accordance with Reddit's markdown before being stored in our database.
-
 * Searches will be based on time, tags, and votes.
-
 
 
 ## Anticipated Output
@@ -158,7 +156,7 @@ Our goal is to make a new facade for Reddit with archival features and a better,
 
 * [Reddit API](https://www.reddit.com/dev/api/) 
 
-## Tech stack
+## Tech Stack
 
 * ReactJS
 * NodeJS
