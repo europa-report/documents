@@ -26,7 +26,7 @@ group:
 - **Edward Riley**
     - _Team Coordinator_
 - **Vincent Cheng**
-    - _Documentartian_
+    - _Documentarian_
 
 ## Background
 Reddit is a social news aggregation, web content rating, and discussion website, recently including livestream content through Reddit Public Access Network. Registered members submit content to the site such as links, text posts, and images, which are then voted up or down by other members. A subreddit is a specific online community, and the posts associated with it, on the social media website Reddit. Subreddits are dedicated to a particular topic that people write about, and they're denoted by /r/, followed by the subreddit's name, e.g., /r/gaming.
@@ -59,21 +59,39 @@ The project serves to provide a statistical analysis to show the increase or dec
 - Client side 
     - Prensentation Layer
       -  **React.js** (Frontend Framework) 
+- GitHub
+    - GitHub URL: https://github.com/europa-report 
 
 ## Design Patterns
 - **Model, View, Controller (MVC)**
-  - Model(Nodejs): responsible for represent data.
-  - Controller(Nodejs): responsible for manipulation of data.
-  - View(React): display data to the gui.
+  - Model (Nodejs): responsible for represent data.
+  - Controller (Nodejs): responsible for manipulation of data.
+  - View (React): display data to the gui.
 - **Single Page Application (SPA)**
-  - All the interactives and swapping data will be in a single page.
+  - The Single Page Application design pattern will fit all the interactives and swapping data will be in a single page.
 - **Proxy**
-  - Will be using python as proxy to retrieve data from Reddit's api.
+  - This proxy design pattern will be using python as proxy to retrieve data from Reddit's api.
 - **Observer**
-  - Using socket.io and react hook as event listener.
+  - The observer design pattern will be using socket.io and react hook as event listener.
 - **Compostion**
-  - Using React's Component to generate another component.
+  - The composition design pattern will be using the React's Component to generate another component.
+
+
 ## Timeline
+
+| Milestones                               | Start         | Deadline     |
+|------------------------------------------|---------------|--------------|
+| Milestone 01 - Requirements              | Feb .., 2021  | Feb 12, 2021 |
+| Milestone 02 - Design & Design Patterns  | Mar .., 2021  | Mar 5, 2021  |
+| Milestone 03 - Layering|                 | Mar 12, 2021  | Mar 12, 2021 |
+| Milestone 04 - Exception Handling        | Mar 26, 2021  | Mar 26, 2021 |
+| Milestone 05 - Performance & Refactoring | Apr 9, 2021   | Apr 9, 2021  |
+| Milestone 06 - Testing                   | Apr 23, 2021  | Apr 23, 2021 |
+| Milestone 07 - Deploying & Packaging     | Apr 30, 2021  | Apr 30, 2021 |
+
+https://docs.github.com/en/github/writing-on-github/organizing-information-with-tables
+This is more information about tables
+
 
 * __Subreddit__ - A Subreddit is a sub community within Reddit. It usually follows a well-defined theme and people interested in the topic/theme can join it to share content with other members of the community.
 
