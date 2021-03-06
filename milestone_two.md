@@ -80,16 +80,16 @@ The project serves to provide a statistical analysis to show the increase or dec
 
 ## Timeline
 
-| Milestones                               | Start         | Deadline     |
-|------------------------------------------|---------------|--------------|
-| Milestone 01 - Requirements              | Feb 5, 2021   | Feb 12, 2021 |
-| Milestone 02 - Design & Design Patterns  | Mar 2, 2021   | Mar 5, 2021  |
-| Milestone 03 - Layering|                 | Mar 12, 2021  | Mar 12, 2021 |
-| Milestone 04 - Exception Handling        | Mar 26, 2021  | Mar 26, 2021 |
-| Milestone 05 - Performance & Refactoring | Apr 9, 2021   | Apr 9, 2021  |
-| Milestone 06 - Testing                   | Apr 23, 2021  | Apr 23, 2021 |
-| Milestone 07 - Deploying & Packaging     | Apr 30, 2021  | Apr 30, 2021 |
----------------------------------------------------------------------------
+| Milestones                               | Planned Meeting Date | Start         | Deadline     |
+|------------------------------------------|----------------------|---------------|--------------|
+| Milestone 01 - Requirements              | Feb 5, 2021          | Feb 5, 2021   | Feb 12, 2021 |
+| Milestone 02 - Design & Design Patterns  | Mar 4, 2021          | Mar 2, 2021   | Mar 5, 2021  |
+| Milestone 03 - Layering                  | Mar 10, 2021         | Mar 10, 2021  | Mar 12, 2021 |
+| Milestone 04 - Exception Handling        | Mar 24, 2021         | Mar 24, 2021  | Mar 26, 2021 |
+| Milestone 05 - Performance & Refactoring | Apr 7, 2021          | Apr 7, 2021   | Apr 9, 2021  |
+| Milestone 06 - Testing                   | Apr 21, 2021         | Apr 21, 2021  | Apr 23, 2021 |
+| Milestone 07 - Deploying & Packaging     | Apr 28, 2021         | Apr 28, 2021  | Apr 30, 2021 |
+--------------------------------------------------------------------------------------------------
 
 ## Glossary
 
