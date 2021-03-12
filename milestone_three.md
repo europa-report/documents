@@ -75,17 +75,20 @@ The project serves to provide a statistical analysis to show the increase or dec
   - The composition design pattern will be using the React's Component to generate another component.
 
 ## Layering 
-Our team will keep the user interface separated from the back-end by using the tactic Separate User Interface, which will allow changes to be made easier. The layered architecture diagram is provided below:
-![alt text](https://github.com/europa-report/documents/blob/main/layered.png)
 - Server-side Layers
-    - Data Layer
-      - **MySQL/MariaDB**
-    - Business Layer
-      - **NodeJS**
-      - **ExpressJS**
+    - Data Layer : **MySQL/MariaDB**
+        -  This layer will include the Maria database and the Reddit API
+    - Business Layer : **NodeJS** & **ExpressJS**
+      - This layer will include our controller
+      - Using NodeJS and ExpressJS to represent and manipulate data
 - Client side 
-    - Presentation Layer
-      -  **React.js** (Front-end Framework) 
+    - Presentation Layer : **React.js**
+      -  This layer will allow the user to search queries and display the chart of datas from a web browser
+
+Our team will keep the user interface separated from the back-end by using the tactic Separate User Interface, which will allow changes to be made easier. 
+
+The layered architecture diagram is provided below:
+![alt text](https://github.com/europa-report/documents/blob/main/layered.png)
 
 ## Timeline
 
