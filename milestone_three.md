@@ -50,12 +50,12 @@ The project serves to provide a statistical analysis to show the increase or dec
 
 ## Technologies Used
 - Back-end
-      - **MySQL/MariaDB**
-      - **NodeJS**
-      - **ExpressJS**
+     - **MySQL/MariaDB**
+     - **NodeJS**
+     - **ExpressJS**
 - Front-end 
-      -  **React.js** 
-      -  **BootStrap**
+     -  **React.js** 
+     -  **BootStrap**
 - GitHub
     - GitHub URL: https://github.com/europa-report 
 
