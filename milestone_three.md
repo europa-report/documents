@@ -76,9 +76,11 @@ The project serves to provide a statistical analysis to show the increase or dec
 
 ## Layering 
 - Server-side Layers
+    - Service Layer : **API**
+       -  This layer will include the Reddit API
     - Data Layer : **MySQL/MariaDB**
-        -  This layer will include the Maria database and the Reddit API
-    - Business Layer : **NodeJS** & **ExpressJS**
+        -  This layer will include the Maria database and MySQL
+    - Application Layer : **NodeJS** & **ExpressJS**
       - This layer will include our controller
       - Using NodeJS and ExpressJS to represent and manipulate data
 - Client side 
