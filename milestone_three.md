@@ -1,4 +1,5 @@
 ```yaml
+Recent Update
 milestone:
     iteration: 03
     title: "Layering"
@@ -70,12 +71,13 @@ The project serves to provide a statistical analysis to show the increase or dec
   - This proxy design pattern will be using python as proxy to retrieve data from Reddit's api.
 - **Observer**
   - The observer design pattern will be using socket.io and react hook as event listener.
-- **Compostion**
+- **Composition**
   - The composition design pattern will be using the React's Component to generate another component.
 
 ## Layering 
-![alt text](https://github.com/europa-report/documents/blob/main/hld_projectbase.png)
-- Serverside Layers
+Our team will keep the user interface separated from the back-end by using the tactic Separate User Interface, which will allow changes to be made easier. The layered architecture diagram is provided below:
+![alt text](https://github.com/europa-report/documents/blob/main/layered.png)
+- Server-side Layers
     - Data Layer
       - **MySQL/MariaDB**
     - Business Layer
@@ -83,7 +85,7 @@ The project serves to provide a statistical analysis to show the increase or dec
       - **ExpressJS**
 - Client side 
     - Presentation Layer
-      -  **React.js** (Frontend Framework) 
+      -  **React.js** (Front-end Framework) 
 
 ## Timeline
 
