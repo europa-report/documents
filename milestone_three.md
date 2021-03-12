@@ -1,5 +1,4 @@
 ```yaml
-Recent Update
 milestone:
     iteration: 03
     title: "Layering"
@@ -75,20 +74,33 @@ The project serves to provide a statistical analysis to show the increase or dec
   - The composition design pattern will be using the React's Component to generate another component.
 
 ## Layering 
-- Server-side Layers
-    - Data Layer : **MySQL/MariaDB**
-        -  This layer will include the Maria database and the Reddit API
-    - Business Layer : **NodeJS** & **ExpressJS**
-      - This layer will include our controller
-      - Using NodeJS and ExpressJS to represent and manipulate data
-- Client side 
-    - Presentation Layer : **React.js**
-      -  This layer will allow the user to search queries and display the chart of datas from a web browser
+
+### Server-side Layers
+
+#### Service Layer: **Python** & **Crontab Job**
+  - This layer will include Python and Crontab Job tools.
+  - The responsibility of this layer is to maintain data consistency. For each new day, the crontab job will be executed which will make an API request from the source containing the data and breaking them down to be organized. The organized data will be selectively passed to the data layer.
+
+#### Data Layer: **MySQL/MariaDB**
+  - This layer will include the MySQL/MariaDB database tool and the Reddit API functionality. 
+  - Once the data is passed from the service layer, the data will add a new record along with newly made unique identifier to be the primary key and a date of when the information was collected and data to be followed afterwards.  
+  - The responsibilies of this layer will be store the collected data from the service layer and pass collected data to the business layer. 
+
+#### Business Layer: **NodeJS** & **ExpressJS**
+  - This layer will act as the controller for the presentation layer.
+  - Using NodeJS and ExpressJS to represent and manipulate data. 
+
+
+### Client-side Layers
+
+#### Presentation Layer: **React.js**
+  -  This layer will allow the user to search queries and display the chart of datas from a web browser
 
 Our team will keep the user interface separated from the back-end by using the tactic Separate User Interface, which will allow changes to be made easier. 
 
 The layered architecture diagram is provided below:
 ![alt text](https://github.com/europa-report/documents/blob/main/layered.png)
+
 
 ## Timeline
 
