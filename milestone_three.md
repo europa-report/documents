@@ -49,15 +49,13 @@ The project serves to provide a statistical analysis to show the increase or dec
 - User Interface will display the chart of datas.
 
 ## Technologies Used
-- Serverside Layers
-    - Data Layer
+- Back-end
       - **MySQL/MariaDB**
-    - Business Layer
       - **NodeJS**
       - **ExpressJS**
-- Client side 
-    - Presentation Layer
-      -  **React.js** (Frontend Framework) 
+- Front-end 
+      -  **React.js** 
+      -  **BootStrap**
 - GitHub
     - GitHub URL: https://github.com/europa-report 
 
