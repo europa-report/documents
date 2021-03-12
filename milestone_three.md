@@ -75,6 +75,17 @@ The project serves to provide a statistical analysis to show the increase or dec
 - **Compostion**
   - The composition design pattern will be using the React's Component to generate another component.
 
+## Layering 
+![alt text](https://github.com/europa-report/documents/blob/main/hld_projectbase.png)
+- Serverside Layers
+    - Data Layer
+      - **MySQL/MariaDB**
+    - Business Layer
+      - **NodeJS**
+      - **ExpressJS**
+- Client side 
+    - Presentation Layer
+      -  **React.js** (Frontend Framework) 
 
 ## Timeline
 
