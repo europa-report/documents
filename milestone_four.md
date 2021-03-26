@@ -1,8 +1,8 @@
 ```yaml
 milestone:
-    iteration: 03
-    title: "Layering"
-    date: "March 12, 2021"
+    iteration: 04
+    title: "Exception Handling"
+    date: "March 26, 2021"
 group:
     number: 03
     name: "Europa Report"
@@ -259,4 +259,4 @@ module.exports = {
     }
 }
 ```
-Our error handling have two parameters, error type and message. Anytime a controller error is caught, an error message will alert the user if the content was not found or the result is empty. 
+Our error handling have two parameters, error type and message. Anytime a controller error is caught, an error message will alert the user at the presentation layer, whether or not if the content was not found or the result is empty. 
