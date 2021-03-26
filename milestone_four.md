@@ -187,3 +187,76 @@ Our overall goal is to make a new facade for Reddit with archival features and a
 * ExpressJS
 * MySQL/MariaDB
 * Python
+
+## Error and Exception Handling
+
+#### Snippet:
+
+* info.controller.js
+```
+    create:(req, res)=>{
+
+        if(!req.body){
+            sendStatus(res)
+            return
+        }
+        
+        Info.create(req.body)
+        .then(data =>{
+            res.send(data)
+        })
+        .catch(err =>{
+            sendErr(res, err)
+        })
+    },
+```
+* lookup.controller.js
+```
+        .catch(err =>{
+            res.status(500).send({
+                message:
+            err.message || "Some error occurred while creating the Lookup"
+            })
+        }):
+        ()=>{
+            res.status(400).send({
+                message:"Content can not be empty!"
+            })
+            return
+        }
+            sendErr(res,err)
+        })
+        
+    },
+```
+* status.js
+```
+module.exports = {
+
+    sendStatus:(res)=>{
+
+        res.status(400).send({
+            message:'Content can not be empty!'
+        })
+    
+        return
+    },
+
+    sendErr:(res, err)=>{
+        res.status(500).send({
+            message:
+            err.message
+        })
+        return
+    },
+
+    sendConfirmation:(res, num)=>{
+
+        num ? (res.send({message:"Operation executed successfully."}))
+            : (res.send({message:"Operation execution failed."}))
+        
+            return
+    }
+}
+```
+Our error handling have two parameters, error type and message. Anytime a controller error is caught, an error message will alert the user if the content was not found or the result is empty. 
