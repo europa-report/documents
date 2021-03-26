@@ -259,4 +259,4 @@ module.exports = {
     }
 }
 ```
-Our error handling have two parameters, error type and message. Anytime a controller error is caught, an error message will alert the user at the presentation layer, whether or not if the content was not found or the result is empty. 
+Our error handling have two parameters, error type and message. Anytime a controller error is caught, an error message will alert the user at the presentation layer, whether or not if the content was not found, the result is empty or any changes failed to update. 
