@@ -320,3 +320,5 @@ except:
 ### Python Exception Handling Description
 
 We have installed a Python Package `SQLAlchemy` which comes with a pre-defined exception handling. For instance, if the engine above does not work then the rest of the python scripting is exited with an Exception Handling description with the error messages being printed to the console.log. *The python scripts altogether is designed not to fail.* However, we do have an exception handling that checks to see if the file or python packages exists or not when we attempt to import the files. If the files or python packages do not exist, the message is logged in terminal visible only to the developers. We have determined that it is not necessary for exception handling in python scripts to store the error messages to the error.log for the meantime. 
+
+![alt text](https://github.com/europa-report/documents/blob/main/expansion%20of%20the%20layered%20architecture%20description.png?raw=true)
