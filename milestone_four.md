@@ -121,13 +121,13 @@ The layered architecture diagram is provided below:
 
 * __Redditor__ - A Reddit user.
 
-* __Upvote__ - It is vote used to show agrrement with a comment or a post.
+* __Upvote__ - It is vote used to show agreement with a comment or a post.
 
 * __Downvote__ - A vote used to show disagreement with a comment or a post.
 
 * __Comment__ - A response to a post or another comment.
 
-* __Post__ - A post constitutes one of the following: A link to an external source, a crosspost which links to another post, rich media, or pain text.
+* __Post__ - A post constitutes one of the following: A link to an external source, a cross-post which links to another post, rich media, or pain text.
 
 
 ## Current System
@@ -144,7 +144,7 @@ Our overall goal is to make a new facade for Reddit with archival features and a
 * Goal #2: Accumulate and track the numbers of the users in the selected subreddit communities from the beginning of semester to the end of the semester by each day.
 * Goal #3: Accumulate and track the numbers of the posts in the selected subreddit communities from the beginning of semester to the end of the semester by each day.
 * Goal #4: Identify the factors supporting the growth or decline of selected subreddit communities.
-* Goal #5: Create a consistent realtime data visualiztion.
+* Goal #5: Create a consistent real-time data visualization.
 
 
 ## Stakeholders
@@ -271,7 +271,7 @@ module.exports = {
 
 ### JS Description
 
-We choose to handle our exceptions on the serverside and clientisde with two parameters, error type and message, which helps us to handle responsibilities within the class. Anytime an error is caught, an error message will will be logged to the console and the detailed information will be stored in the error.log file in the log directory of the server. If the content was not found, the result is empty or any changes failed to update, they will also be logged. We recognize that if an exception handling was revealed to the malicious users, the malicious users will exploit that endpoint vulnerability and the security would be compromised. We will expand on the presentation layer to provide our own generic error codes to inform the user that something has occurred and to deliver the error code to the developer for them to repeat the steps the user made and resolve that vulnerability as soon as possible.
+We choose to handle our exceptions on the server-side and client-side with two parameters, error type and message, which helps us to handle responsibilities within the class. Anytime an error is caught, an error message will will be logged to the console and the detailed information will be stored in the error.log file in the log directory of the server. If the content was not found, the result is empty or any changes failed to update, they will also be logged. We recognize that if an exception handling was revealed to the malicious users, the malicious users will exploit that endpoint vulnerability and the security would be compromised. We will expand on the presentation layer to provide our own generic error codes to inform the user that something has occurred and to deliver the error code to the developer for them to repeat the steps the user made and resolve that vulnerability as soon as possible.
 
 
 ### Python Exception Handling Snippets
