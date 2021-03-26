@@ -190,10 +190,15 @@ Our overall goal is to make a new facade for Reddit with archival features and a
 
 ## Error and Exception Handling
 
-#### Snippet:
 
-* info.controller.js
-```
+### Types/Categories
+
+[TBA]
+
+### JS Snippet:
+
+- info.controller.js
+```js
     create:(req, res)=>{
 
         if(!req.body){
@@ -210,8 +215,9 @@ Our overall goal is to make a new facade for Reddit with archival features and a
         })
     },
 ```
-* lookup.controller.js
-```
+
+- lookup.controller.js
+```js
         .catch(err =>{
             res.status(500).send({
                 message:
@@ -229,8 +235,9 @@ Our overall goal is to make a new facade for Reddit with archival features and a
         
     },
 ```
-* status.js
-```
+
+- status.js
+```js
 module.exports = {
 
     sendStatus:(res)=>{
@@ -259,4 +266,57 @@ module.exports = {
     }
 }
 ```
-Our error handling have two parameters, error type and message. Anytime a controller error is caught, an error message will alert the user at the presentation layer, whether or not if the content was not found, the result is empty or any changes failed to update. 
+
+### JS Description
+
+We choose to handle our exceptions on the serverside and clientisde with two parameters, error type and message, which helps us to handle responsibilities within the class. Anytime an error is caught, an error message will will be logged to the console and the detailed information will be stored in the error.log file in the log directory of the server. If the content was not found, the result is empty or any changes failed to update, they will also be logged. We recognize that if an exception handling was revealed to the malicious users, the malicious users will exploit that endpoint vulnerability and the security would be compromised. We will expand on the presentation layer to provide our own generic error codes to inform the user that something has occurred and to deliver the error code to the developer for them to repeat the steps the user made and resolve that vulnerability as soon as possible.
+
+
+### Python Exception Handling Snippets
+- baseSQL.py
+```python
+username = "root"
+password = "students"
+hostname = "localhost"
+database = "subreddit_db"
+
+engine = create_engine("mysql://" + username + ":" + password + "@" + hostname + "/" + database)
+```
+
+- get_call.py
+```python
+try:
+    import baseAPI
+except:
+    print("baseAPI.py file not found. ")
+    exit(1)
+
+try:
+    import baseSQL
+except:
+    print("baseSQL.py file not found.")
+    exit(1)
+try:
+    import json
+except:
+    print("JSON package not found.")
+    exit(1)
+
+try:
+    import mysql
+except:
+    print("MySQL package not found.")
+    exit(1)
+
+try:
+    from datetime import datetime
+    import time
+except:
+    print("Datetime or Time not found.")
+    exit(1)
+```
+
+
+### Python Exception Handling Description
+
+We have installed a Python Package `SQLAlchemy` which comes with a pre-defined exception handling. For instance, if the engine above does not work then the rest of the python scripting is exited with an Exception Handling description with the error messages being printed to the console.log. *The python scripts altogether is designed not to fail.* However, we do have an exception handling that checks to see if the file or python packages exists or not when we attempt to import the files. If the files or python packages do not exist, the message is logged in terminal visible only to the developers. We have determined that it is not necessary for exception handling in python scripts to store the error messages to the error.log for the meantime. 
