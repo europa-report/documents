@@ -193,8 +193,13 @@ Our overall goal is to make a new facade for Reddit with archival features and a
 
 ### Types/Categories
 
-[TBA]
-
+- Python's Exception
+    - Built-in Exception
+- Nodejs's Exception
+    - Built-in Exception
+    - User-Defined Exception
+- React's Exception
+    - User-Defined Exception
 ### React Snippet:
 - app.js
 ```js
