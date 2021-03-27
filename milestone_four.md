@@ -195,7 +195,48 @@ Our overall goal is to make a new facade for Reddit with archival features and a
 
 [TBA]
 
-### JS Snippet:
+### React Snippet:
+- app.js
+```js
+    render() {
+        return (
+            <div class="container">
+            <ErrorBoundary>
+            <Deck style={{width: '20rem', height: '100%'}} title="Type of Charts" subtitle="Chart 1"/>
+            <Deck style={{width: '15rem', height: '100%'}} title="Result" subtitle="Bar Chart"/>
+            </ErrorBoundary>
+            </div>
+        )
+    }
+```
+- ErrorBoundary.js
+```js
+    class ErrorBoundary extends React.Component{
+    constructor(props){
+        this.state = {hasError:false}
+    }
+
+    componentDidCatch(error, info){
+
+        this.state({hasError:true})
+
+        logErrorToMyService(error,info)
+    }
+
+    render() {
+        if(this.state.hasError) {
+
+            return <h1>Something went wrong.</h1>
+        }
+
+        return this.props.children
+    }
+}
+
+export default ErrorBoundary
+```
+
+### Nodejs's REST api Snippet:
 
 - info.controller.js
 ```js
@@ -205,34 +246,42 @@ Our overall goal is to make a new facade for Reddit with archival features and a
             sendStatus(res)
             return
         }
-        
-        Info.create(req.body)
-        .then(data =>{
-            res.send(data)
-        })
-        .catch(err =>{
-            sendErr(res, err)
-        })
+
+        db.conn().promise().query('insert into infos (date, subscribers, active_subscribers, submission, comments, lookupId) values (?,?,?,?,?,?)',
+        [req.body.date, req.body.subscribers, 
+            req.body.active_subscribers, req.body.submission, 
+            req.body.comments, req.body.lookupId],
+        (err, results)=>{
+            if(err) {sendErr(res, err)}
+            else {res.send({result:results})}
+        }).then(([rows,fields])=>{
+            console.log(rows)
+            res.send({result:rows})
+        }).catch((err)=>sendErr(res,err))
+        .then(()=>db.conn().end())
     },
 ```
 
 - lookup.controller.js
 ```js
-        .catch(err =>{
-            res.status(500).send({
-                message:
-            err.message || "Some error occurred while creating the Lookup"
-            })
-        }):
-        ()=>{
-            res.status(400).send({
-                message:"Content can not be empty!"
-            })
+        create:(req, res)=>{
+        
+        if(!req.body.name){
+            sendStatus(res)
             return
         }
-            sendErr(res,err)
-        })
-        
+
+        db.conn().promise().query('insert into lookups (name, abbreviation) values (?,?)',
+        [req.body.name, req.body.abbreviation],
+        (err, results)=>{
+            if(err) {sendErr(res, err)}
+            else {res.send({result:results})}
+        }).then(([rows,fields])=>{
+            console.log(rows)
+            res.send({result:rows})
+        }).catch((err)=>sendErr(res,err))
+        .then(()=>db.conn().end())
+
     },
 ```
 
